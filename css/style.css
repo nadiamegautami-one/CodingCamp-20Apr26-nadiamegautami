@@ -1,0 +1,119 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* SECTION CARD */
+section {
+  background: #1e293b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* GREETING */
+#greeting {
+  text-align: center;
+}
+
+/* TIMER */
+#timer {
+  text-align: center;
+}
+
+#timeDisplay {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+/* BUTTON */
+button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px 0;
+  width: 60%;
+}
+
+/* TODO LIST */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #334155;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TASK DONE */
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* QUICK LINKS */
+#linkContainer button {
+  margin: 5px;
+}
+
+/* LIGHT MODE */
+.light {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.light section {
+  background: #ffffff;
+}
+
+.light li {
+  background: 
