@@ -2,53 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Life Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Dashboard</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <div class="container">
 
-    <!-- Greeting -->
-    <section class="card">
-      <h2 id="greeting"></h2>
-      <p id="datetime"></p>
+    <!-- GREETING -->
+    <section id="greeting">
+      <h1 id="greetText">Hello</h1>
+      <p id="dateTime"></p>
     </section>
 
-    <!-- Focus Timer -->
-    <section class="card">
-      <h3>Focus Timer</h3>
-      <div id="timer">25:00</div>
-      <div class="buttons">
+    <!-- TIMER -->
+    <section id="timer">
+      <h2>Focus Timer</h2>
+      <h1 id="timeDisplay">25:00</h1>
+
+      <div>
         <button onclick="startTimer()">Start</button>
         <button onclick="stopTimer()">Stop</button>
         <button onclick="resetTimer()">Reset</button>
       </div>
     </section>
 
-    <!-- To-Do List -->
-    <section class="card">
-      <h3>To-Do List</h3>
-      <input type="text" id="taskInput" placeholder="Add task...">
+    <!-- TODO LIST -->
+    <section id="todo">
+      <h2>To-Do List</h2>
+
+      <input type="text" id="taskInput" placeholder="Add a task...">
       <button onclick="addTask()">Add</button>
-      <button onclick="sortTasks()">Sort A-Z</button>
+      <button onclick="sortTasks()">Sort</button>
+
       <ul id="taskList"></ul>
     </section>
 
-    <!-- Quick Links -->
-    <section class="card">
-      <h3>Quick Links</h3>
-      <input type="text" id="linkName" placeholder="Name">
-      <input type="url" id="linkURL" placeholder="URL">
-      <button onclick="addLink()">Add</button>
-      <ul id="linkList"></ul>
+    <!-- QUICK LINKS -->
+    <section id="links">
+      <h2>Quick Links</h2>
+
+      <input type="text" id="linkName" placeholder="Website name">
+      <input type="text" id="linkURL" placeholder="https://...">
+      <button onclick="addLink()">Add Link</button>
+
+      <div id="linkContainer"></div>
     </section>
 
-    <!-- Dark Mode -->
-    <button id="toggleMode">Toggle Dark Mode</button>
+    <!-- DARK MODE -->
+    <section>
+      <h2>Settings</h2>
+      <button onclick="toggleTheme()">Toggle Light / Dark Mode</button>
+    </section>
 
   </div>
 
+  <!-- JAVASCRIPT -->
   <script src="js/script.js"></script>
+
 </body>
 </html>
